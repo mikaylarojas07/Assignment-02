@@ -34,3 +34,23 @@ Project card template from Bootstrap:https://getbootstrap.com/docs/6.0/component
 In my project cards, I also wrapped the cards in <div class="d-flex flex-wrap"> to avoid overflowing text. 
 This code was also inspired by Bootstrap. 
 
+Email input field code from Bootstrap
+<div class="form-field">
+  <label for="fieldText" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="fieldText" placeholder="name@example.com">
+  <div class="form-text">
+    We’ll never share your email with anyone else.
+  </div>
+</div>
+
+Textarea code from Bootstrap
+<div class="form-field">
+  <label for="fieldTextarea" class="form-label">Message</label>
+  <textarea class="form-control" id="fieldTextarea" rows="3"></textarea>
+  <div class="form-text">
+    Be sure to include relevant details.
+  </div>
+</div>
+
+
+
