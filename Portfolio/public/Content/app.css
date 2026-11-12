@@ -42,3 +42,8 @@ video {
     width: 100%;
     max-width: 320px;
 }
+
+form{
+    background-color: #D7BDE2;
+    padding: 10px;
+}
