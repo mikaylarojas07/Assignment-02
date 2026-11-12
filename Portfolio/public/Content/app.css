@@ -1,7 +1,6 @@
 body {
   background-color: #FFF5E3; /*cream page background colour*/
-  font-family: "DM Serif Display", serif; /*Sets all text to present as DM Serif Display, with a fallback serif font*/
-  font-weight: 400; 
+  font-family: serif; /*Sets all text to serif*/
   font-style: normal; /*Normal font styling, no italics, boldness, etc*/
   margin: 0; /*Removes default body margin*/
   padding-bottom: 80px; /*Padding is the space between an element and its own borders*/
