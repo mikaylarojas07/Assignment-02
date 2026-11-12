@@ -5,18 +5,18 @@
 
     <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form"> 
           <div class="form-field"> <!--Writing form fields as paragraph content-->
-            <label for="fieldText" class="form-label">Name:</label> <!--Defines the label (what will be displayed in front of form field) for the input field "name"-->
+            <label for="name" class="form-label">Name:</label> <!--Defines the label (what will be displayed in front of form field) for the input field "name"-->
             <input type="text" class="form-control"name="name" size="32" id="name" required placeholder="Your name here"> <!--Defines a REQUIRED single-line text field called "name", which is 32 characters long and defines a placeholder to aid the user-->
         </div> <!--Closing paragraph text for this form field-->
         <div class="form-field">
             <label for="fieldText" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="fieldText" placeholder="name@example.com">
+            <input type="email" name="email" class="form-control" id="fieldText" placeholder="name@example.com">
             <div class="form-text">
             </div>
         </div>
             <!--Adding "required" to a form field means that the form will not submit if that field is empty-->
             <div class="form-field">
-                <label for ="phone">Phone number:</label> <!--Defines label for the "phone" input field-->
+                <label for ="phone" class="form-label">Phone number:</label> <!--Defines label for the "phone" input field-->
                 <!--Defines the input field for a phone number, including a required field and data validation, meaning the phone number must be present and in the format: 123-456-7890-->
                 <!--"pattern" does the data validation-->
                 <input name="phone" type="tel" class="form-control" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--"pattern" adapted from https://www.w3schools.com/tags/att_input_type_tel.asp-->
