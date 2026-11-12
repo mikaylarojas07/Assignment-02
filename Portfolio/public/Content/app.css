@@ -1,4 +1,21 @@
-body{
-    font-family: 'DM Serif Display', serif;
-    background-color: #be529a;
+body {
+  background-color: #FFF5E3; /*cream page background colour*/
+  font-family: "DM Serif Display", serif; /*Sets all text to present as DM Serif Display, with a fallback serif font*/
+  font-weight: 400; 
+  font-style: normal; /*Normal font styling, no italics, boldness, etc*/
+  margin: 0; /*Removes default body margin*/
+  padding: 0; /*Padding is the space between an element and its own borders*/
+}
+
+.navbar{
+  background-color: #A3C6A8;
+  padding: 10px; /*The space inside the header between its content and its own border*/
+  margin: 0; /*No space between the header's border and other page elements*/
+  text-align: center;
+}
+
+.navbar.fixed-bottom{
+  background-color: #F7CAC9;
+  padding: 10px; /*The space inside the header between its content and its own border*/
+  margin: 0; 
 }
