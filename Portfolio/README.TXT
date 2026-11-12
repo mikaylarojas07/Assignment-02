@@ -1,6 +1,10 @@
 Mikayla Rojas - 101023576
 Assignment 2 README File
 
+Sources
+Bootstrap: https://getbootstrap.com/docs/6.0/forms/field/
+Fontawesome: https://www.npmjs.com/package/@fortawesome/fontawesome-free
+
 Citations: 
 Project card template from Bootstrap:https://getbootstrap.com/docs/6.0/components/card/
 
