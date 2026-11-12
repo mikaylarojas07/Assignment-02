@@ -21,7 +21,8 @@ body {
 }
 
 .custom-button{
-    background-color: #D7BDE2
+    background-color: #D7BDE2;
+    color: black;
 }
 
 .card{
