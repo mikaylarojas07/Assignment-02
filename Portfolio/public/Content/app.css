@@ -4,7 +4,7 @@ body {
   font-weight: 400; 
   font-style: normal; /*Normal font styling, no italics, boldness, etc*/
   margin: 0; /*Removes default body margin*/
-  padding: 0; /*Padding is the space between an element and its own borders*/
+  padding-bottom: 80px; /*Padding is the space between an element and its own borders*/
 }
 
 .navbar{
@@ -39,5 +39,6 @@ video {
     border: 15px #D7BDE2 solid; /*makes a border that is 15px wide, lavender, and solid (not dashed or dotted) */
     box-shadow: 10px 10px 5px #A3C6A8; /*Sets a drop shadow: 10px right, 10px down, 5px blur, and it is sage green coloured*/
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 320px;
 }
