@@ -19,3 +19,24 @@ body {
   padding: 10px; /*The space inside the header between its content and its own border*/
   margin: 0; 
 }
+
+.custom-button{
+    background-color: #D7BDE2
+}
+
+.card{
+    border: 10px solid #D7BDE2; /*Sets a 10px lavender border surrounding each project card*/
+    border-radius: 10px; /*Rounds the corners slightly*/
+    padding: 20px; /*Adding space inside the card, between the text and border*/
+    margin: 20px; /*The space outside the card on all four sides*/
+    background-color: #F4a261;
+}
+
+video {
+    margin: 15px; /*15 pixels between the video and other page elements*/
+    background-color: #F7CAC9; /*Background video colour is pink, it is visible anywhere the video (portrait) doesn't fill the box (landscape)*/
+    border: 15px #D7BDE2 solid; /*makes a border that is 15px wide, lavender, and solid (not dashed or dotted) */
+    box-shadow: 10px 10px 5px #A3C6A8; /*Sets a drop shadow: 10px right, 10px down, 5px blur, and it is sage green coloured*/
+    height: auto;
+    max-width: 100%;
+}
