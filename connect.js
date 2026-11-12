@@ -13,4 +13,6 @@ app.use('/about', function(req, res){
 });
  
 //create node.js http server and listen on port
-http.createServer(app).listen(3000);
+http.createServer(app).listen(3000, ()=>{
+    console.log(`Server running at http://127.0.0.1:3000/`);
+});
