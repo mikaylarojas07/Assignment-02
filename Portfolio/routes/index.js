@@ -11,7 +11,7 @@ router.get('/home', function(req, res, next) {
 });
 
 router.get('/aboutme', function(req, res, next) {
-  res.render('index', { title: 'About Me' });
+  res.render('aboutme', { title: 'About Me' });
 });
 
 router.get('/projects', function(req, res, next) {
