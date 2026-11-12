@@ -4,5 +4,10 @@
   <img src="/Assets/images/20240824_045610657_iOS.jpg" alt="Mikayla Rojas" 
   style="width: 150px; height: 100px;"/>
   <p>Hi, I'm Mikayla! I am currently a second-year Technology Management (BIT) Student at Ontario Tech University. I have a strong interest in Technology and Business. </p>
+  <video width="320" height="240" controls poster="/Assets/images/aboutme.png"> <!--Opening tag for video element including video controls, dimensions, and poster-->
+            <source src="/Assets/images/aboutme.mp4" type="video/mp4"> <!--Specifying the video file in MP4 format-->
+            <source src="/Assets/images/aboutme.ogv" type="video/ogg"> <!--Specifying the video file in OGG format-->
+            Your browser does not support the video tag. <!--Error message that will display for browsers that do not support HTML5-->
+        </video> <!--Closing tag for video section-->
   <script src="/Scripts/app.js"></script>
 <%- include partials/footer.ejs %>
