@@ -1,10 +1,14 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
-<div class="container my-5 text-center">
+<div class="container text-center">
   <h1 class="mb-4 text-center">About Me</h1>
-
-  <img src="/Assets/images/20240824_045610657_iOS.jpg" alt="Mikayla Rojas" class="img-fluid" style="max-width:200px;"/>
-  <p class="mt-3">Hi, I'm Mikayla! I am currently a second-year Technology Management (BIT) Student at Ontario Tech University. I have a strong interest in Technology and Business. </p>
+  <img src="/Assets/images/20240824_045610657_iOS.jpg" alt="Mikayla Rojas" class="rounded mx-auto d-block" style="max-width:200px;"/>
+  <div class="card mx-auto" style="max-width: 400px;">
+    <div class="card-body">
+        <h4 class="card-title">Mikayla Rojas</h4>
+        <p class="card-text">Hi, I'm Mikayla! I am currently a second-year Technology Management (BIT) Student at Ontario Tech University. I have a strong interest in Technology and Business. </p>
+    </div>
+  </div>
     <video width="320" height="240" controls poster="/Assets/images/aboutme.png"> <!--Opening tag for video element including video controls, dimensions, and poster-->
         <source src="/Assets/images/aboutme.mp4" type="video/mp4"> <!--Specifying the video file in MP4 format-->
         <source src="/Assets/images/aboutme.ogv" type="video/ogg"> <!--Specifying the video file in OGG format-->
