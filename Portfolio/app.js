@@ -12,16 +12,21 @@ let usersRouter = require('./routes/users');
 let app = express();
 
 // view engine setup
+// Tell Express my page templates are in the 'views' folder
 app.set('views', path.join(__dirname, 'views'));
+// Use ejs as the template engine, so res.render('aboutme') loads views/aboutme.ejs
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// serve files in /public (images, CSS, scripts)
 app.use(express.static(path.join(__dirname, 'public')));
+// serve node_modules so pages can load Bootstrap and FontAwesome
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
+// Send all requests starting with / to the routes in routes/index.js
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
