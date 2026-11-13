@@ -1,33 +1,35 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
+<!--Bootstrap container centers page content, max-width keeps form from getting stretched-->
 <div class="container" style="max-width: 600px;">
+    <!--Bootstrap: "mb-4" adds space below heading, "text-center" centers it-->
     <h1 class="mb-4 text-center">Contact Me!</h1>
-
+    <!--Mailto action: submitting open's user's email client with data addressed to me-->
     <form action="mailto:mikayla.rojas@ontariotechu.net" method="post" enctype="text/plain" name="form"> 
-          <div class="form-field"> 
+        <!--Bootstrap "mb-3" adds space below each form field-->
+        <div class="mb-3"> 
+            <!--Bootstrap "form-label" styles the labels, "form-control" gives input full width and styling-->
             <label for="name" class="form-label">Name:</label>
-            <input type="text" class="form-control"name="name" size="32" id="name" required placeholder="Your name here"> <!--Defines a REQUIRED single-line text field called "name", which is 32 characters long and defines a placeholder to aid the user-->
-        </div> <!--Closing paragraph text for this form field-->
-        <div class="form-field">
+            <input type="text" class="form-control"name="name" size="32" id="name" required placeholder="Your name here"> 
+        </div>
+        <div class="mb-3">
             <label for="fieldText" class="form-label">Email address</label>
             <input type="email" name="email" class="form-control" id="fieldText" placeholder="name@example.com">
             <div class="form-text">
-            </div>
         </div>
-            <!--Adding "required" to a form field means that the form will not submit if that field is empty-->
-            <div class="form-field">
-                <label for ="phone" class="form-label">Phone number:</label> <!--Defines label for the "phone" input field-->
-                <!--Defines the input field for a phone number, including a required field and data validation, meaning the phone number must be present and in the format: 123-456-7890-->
-                <!--"pattern" does the data validation-->
-                <input name="phone" type="tel" class="form-control" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--"pattern" adapted from https://www.w3schools.com/tags/att_input_type_tel.asp-->
-            </div>
-        <div class="form-field">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone number:</label> <!--Defines label for the "phone" input field-->
+            <input name="phone" type="tel" class="form-control" id="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <!--"pattern" adapted from https://www.w3schools.com/tags/att_input_type_tel.asp-->
+        </div>
+        <div class="mb-3">
             <label for="fieldTextarea" class="form-label">Comments?</label>
             <textarea class="form-control" name="comments" id="fieldTextarea" rows="3"></textarea>
             <div class="form-text">
-            </div>
         </div>
-        <button type="submit" class="btn btn-primary custom-button">Submit</button> <!--Submit button, when clicked the form will submit-->
+        </div>
+        <!--Bootstrap button: "btn" is base style, and the "type=submit" declares its function-->
+        <button type="submit" class="btn btn-primary custom-button">Submit</button> <!--Bootstrap Submit button, when clicked the form will submit-->
     </form>
 </div>
 <%- include partials/footer.ejs %>
