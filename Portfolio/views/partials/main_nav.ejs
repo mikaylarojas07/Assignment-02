@@ -1,3 +1,4 @@
+<%# Creates a shared navigation bar for each page%>
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Mikayla Rojas' Portfolio</a>
@@ -6,7 +7,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <%# Each link is active (highlighted) when the title passed from the router matches that page%>
           <li class="nav-item">
+            <%# If the current page title is "Home Page", make this link active- otherwise, show it normally%>
             <% if(title=="Home Page") {%>
             <a class="nav-link active" aria-current="page" href="/home"> <i class="fa-solid fa-house fa-lg"></i> Home</a>
             <% } else { %>
