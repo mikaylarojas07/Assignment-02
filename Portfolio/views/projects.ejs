@@ -1,15 +1,18 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
+<!--Bootstrap: "mb-4" adds spacing below heading, "text-heading centers"-->
 <h1 class="mb-4 text-center">My Projects</h1>
 
+<!--Bootstrap flexbox: "d-flex" places cards in a row, "fex-wrap" moves them to the next line when out of space-->
 <div class="d-flex flex-wrap">
+    <!--Project card (structure from Bootstrap, see README): "card" is the box, "card-body" is the content-->
     <div class="card" style="max-width: 320px;">
     <div class="card-body">
         <h4 class="card-title">TriviaTime - Python Quiz Game</h4>
         <p class="card-text">For my final project in INFR1101 - Intro to Python, I created an interactive quiz game using Python fundamentals.</p>
     </div>
     </div>
-
+    <!--The next three cards use the same Bootstrap structure-->
     <div class="card" style="max-width: 320px;">
     <div class="card-body">
         <h4 class="card-title">History of the Smartphone - Paper</h4>
