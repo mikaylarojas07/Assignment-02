@@ -1,3 +1,5 @@
+/*CSS Styling adapted from Assignment 1 colour scheme/styling */
+
 body {
   background-color: #FFF5E3; /*cream page background colour*/
   font-family: serif; /*Sets all text to serif*/
@@ -6,30 +8,34 @@ body {
   padding-bottom: 80px; /*Padding is the space between an element and its own borders*/
 }
 
+/*Adding additional styling to the Bootstrap navbar*/
 .navbar{
-  background-color: #A3C6A8;
+  background-color: #A3C6A8; /*Setting navbar colour to light green*/
   padding: 10px; /*The space inside the header between its content and its own border*/
   margin: 0; /*No space between the header's border and other page elements*/
-  text-align: center;
+  text-align: center; /*On full screen, this centres the navbar elements (home, about me, projects, contact me)*/
 }
 
+/*Adding additional styling to the Bootstrap footer*/
 .navbar.fixed-bottom{
   background-color: #F7CAC9;
   padding: 10px; /*The space inside the header between its content and its own border*/
   margin: 0; 
 }
 
+/*Colouring the for submit button on Contact Me*/
 .custom-button{
     background-color: #D7BDE2;
     color: black;
 }
 
+/*Applying my CSS styling to the Bootstrap project card elements*/
 .card{
     border: 10px solid #D7BDE2; /*Sets a 10px lavender border surrounding each project card*/
     border-radius: 10px; /*Rounds the corners slightly*/
     padding: 20px; /*Adding space inside the card, between the text and border*/
     margin: 20px; /*The space outside the card on all four sides*/
-    background-color: #F4a261;
+    background-color: #F4a261; /*Sets card background colour to orange*/
 }
 
 video {
@@ -42,6 +48,7 @@ video {
     max-width: 320px;
 }
 
+/*Setting colour for Contact Me form*/
 form{
     background-color: #D7BDE2;
     padding: 10px;
